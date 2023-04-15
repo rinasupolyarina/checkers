@@ -11,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="https://kit.fontawesome.com/416de93d8d.js" crossorigin="anonymous"></script>
     <header>
         <nav>
             <div class="container">
@@ -27,7 +28,7 @@
             </div>
         </nav>
     </header>
-
+<!-- 
     <section class="promo">
         <div class="container">
             <div class="row">
@@ -36,7 +37,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     
     <div class="overlay">
         <div class="modal" id="sign" > 
@@ -75,43 +76,6 @@
                     <label for="privat">Приватная</label>
                 </div>
 
-
-                <!-- <div class="checkers__duration">
-                    <input type="radio" id="blitz" name="duration" class="mb0">
-                    <label for="blitz">Блиц: 5 минут</label>
-                </div>
-
-                <div class="checkers__duration">
-                    <input type="radio" id="rapid" name="duration">
-                    <label for="rapid">Рапид: 15 минут</label>
-                </div>
-
-                <div class="checkers__duration">
-                    <input type="radio" id="classic" name="duration">
-                    <label for="classic">Классические: 45 минут</label>
-                </div>
-
-                <div class="checkers__duration">
-                    <input type="radio" id="russian" name="duration">
-                    <label for="russian">Русские шашки: 1 час 20 минут </label>
-                </div>
-
-                <div class="checkers__duration">
-                    <input type="radio" id="notime" name="duration">
-                    <label for="notime">без времени</label>
-                </div> -->
-
-                <!-- <div class="checkers__dropdown">
-                    <button class="checkers__dropdown-btn">Вариант игры</button>
-                    <div class="checkers__dropdown-content">
-                      <a href="#">Блиц: 5 минут</a>
-                      <a href="#">Рапид: 15 минут</a>
-                      <a href="#">Классические: 45 минут</a>
-                      <a href="#">Русские шашки: 1 час 20 минут </a>
-                      <a href="#">без времени</a>
-                    </div>
-                </div> -->
-
                 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <div class="select">
@@ -129,8 +93,72 @@
                 <button data-modal="register" class="btn btn_submit" >Создать комнату</button>
             </form>
         </div>
-
     </div>
+
+    <section class="game">
+        <div class="container">
+            <div class="game__wrapper">
+                <!-- <img src="" alt="photo"> -->
+                <div class="game__user">
+                    <div class="game__user__info">
+                        <div class="game__user__info_name">User1</div>
+                        <div class="game__user__info_rate">
+                            <div><i class="fa-solid fa-signal" style="color: #000000;"></i></div>
+                            <div class="rate">1984</div>
+                        </div>
+
+                    </div>
+                    <div class="game__user__round">
+                        <img src="img/user_photo/user1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="game__btns">
+                    <button class="btn btn_game">Ничья</button>
+                    <button class="btn btn_game">Поражение</button>
+                </div>
+
+                <div class="game__play">
+                    <ul class="game__play__tabs">
+                        <li class="game__play__tab game__play__tab_active">
+                            <div>Ходы</div>
+                        </li>
+                        <li class="game__play__tab">
+                            <div>Чат</div>
+
+                        </li>
+                    </ul>
+
+                    <div class="game__play__content game__play__content_active">
+                        <div class="game__play__item">
+                            <p>История ходов</p>
+                        </div>
+                    </div>
+                    <div class="game__play__content">
+                        <div class="game__play__item">
+                            <p>Сообщения игроков</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game__user">
+                    <div class="game__user__info">
+                        <div class="game__user__info_name">User2</div>
+                        <div class="game__user__info_rate">
+                            <div><i class="fa-solid fa-signal" style="color: #000000;"></i></div>
+                            <div class="rate">1984</div>
+                        </div>
+
+                    </div>
+                    <div class="game__user__round">
+                        <img src="img/user_photo/user2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/script.js" ></script>

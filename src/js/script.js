@@ -40,4 +40,10 @@ $(document).ready(function(){
             $(this).parent().prev().prev().val($(this).text());
         });
     });
+
+    $('ul.game__play__tabs').on('click', 'li:not(.game__play__tab_active)', function(){
+        $(this)
+        .addClass('game__play__tab_active').siblings().removeClass('game__play__tab_active')
+        .closest('div.game__play').find('div.game__play__content').removeClass('game__play__content_active').eq($(this).index()).addClass('game__play__content_active');
+    } )
 });
