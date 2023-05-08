@@ -2,6 +2,7 @@
 	// min-height: 800px 
 	// background-color: #393939
 	// padding: 80px 0
+	position: relative
 
 
 	&__wrapper
@@ -10,6 +11,11 @@
 		// background-color: grey
 		padding: 20px
 		border-radius: 20px
+	&__board
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
 
 	&__user
 		background-color: white
@@ -53,11 +59,11 @@
 			color: $bg-color
 			padding: 20px
 	&__btns
-		width: 240px
+		width: 400px
 		min-height: 30px
 		// margin: 10px
 		margin: 0 auto
-		margin-top: 10px
+		margin: 20px auto
 		display: flex
 		justify-content: space-between
 	&__play
